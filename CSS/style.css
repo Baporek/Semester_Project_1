@@ -1,0 +1,1376 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+
+/*-------------------NAVIGATION-------------------*/
+
+nav {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 100%;
+}
+
+label.logo {}
+
+nav ul {
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 12px;
+    color: white;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: .5s;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+/*----SEARCH----*/
+nav div {
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 27px;
+    font-size: 22px;
+}
+
+.burger {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.burger:hover {
+    color: darkcyan;
+}
+
+#check {
+    display: none;
+}
+
+.active {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.fa-search:hover {
+    cursor: pointer;
+    color: cadetblue;
+}
+
+.cart {
+    text-align: center;
+    color: white;
+    line-height: 25px;
+    height: 5em;
+    width: 100px;
+    font-size: 18px;
+    position: absolute;
+    right: 40px;
+    top: 7px;
+    background-color: darkred;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 7px;
+}
+
+.cart:hover {
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+.remove {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+}
+
+/*----------------------HEADER -  HOME---------------------*/
+
+body#home {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(images/andrew-ruiz-348421.jpg);
+    /*    background: url(images/andrew-ruiz-348421.jpg) no-repeat;*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*
+    background-color: darkblue;
+    background-blend-mode: lighten;
+*/
+}
+
+.site_mark {
+    display: none;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    -webkit-text-stroke: 2px black;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    margin: 80px auto 20px auto;
+}
+
+h2.Buy {
+    text-align: center;
+    margin: 100px auto 150px auto;
+}
+
+h2 a {
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid orange;
+    border-radius: 17px;
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    font-weight: 300;
+    font-size: 25px;
+}
+
+h2 a:hover {
+    color: black;
+    background: white;
+    text-decoration: none;
+    font-size: 27px;
+}
+
+.first {
+    margin: 5px auto;
+}
+
+p.description {
+    color: white;
+    border: 2px solid orange;
+    text-align: left;
+    font-size: 22px;
+    background: rgba(0, 0, 0, 0.4);
+    max-height: 80%;
+    padding: 12px;
+    position: absolute;
+    margin: 50px 10px 50px 350px;
+}
+
+span {
+    font-weight: 600;
+}
+
+.socials {
+    position: absolute;
+    margin-left: 150px;
+    bottom: 100px;
+    height: 70px;
+    z-index: -2;
+}
+
+.socials img {
+    height: 75px;
+    transition: 0.6s;
+    margin-top: 20px;
+}
+
+.socials img:hover {
+    height: 110px;
+    cursor: pointer;
+}
+
+footer {
+    margin: 0 auto;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 22px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    bottom: -50%;
+    /*
+    position: relative;
+    bottom: -400px;
+    left: 50%;
+    color: white;
+*/
+}
+
+
+/*---------------------FORM BUY----------------------------*/
+
+.buy-form {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(images/scott-webb-102825.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 100px;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 2px solid white;
+}
+
+
+legend h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    margin: 20px auto;
+}
+
+.order-form__dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+    border: 2px solid white;
+}
+
+input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid orange;
+}
+
+input[type="tel"] {
+    width: 95%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid orange;
+}
+
+.order-form_dropdown {
+    font-size: 20px;
+}
+
+fieldset p {
+    margin-top: 10px;
+}
+
+#order-button {
+    width: 150px;
+    height: 50px;
+    margin: 20px 30%;
+    font-size: 15px;
+    font-weight: 900;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid orange;
+}
+
+#order-button:hover {
+    background-color: white;
+    color: black;
+    font-size: 22px;
+    text-transform: uppercase;
+
+}
+
+#contact-info {
+    margin: 20px;
+    padding: 20px;
+    border: none;
+}
+
+
+#Tickets_option {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 20px;
+}
+
+button {
+    background: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 100px 35vw;
+    padding: 5px;
+    width: 30%;
+    text-transform: uppercase;
+    color: black;
+    border: 2px solid black;
+}
+
+botton:hover {
+    background: grey;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+/*-----------------------VISIT--------------------*/
+body#visit {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3)), url(images/scientific-2040795_1280.jpg);
+    /*    background: url(images/andrew-ruiz-348421.jpg) no-repeat;*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.visit_wrap h1 {
+    margin-top: 90px;
+    max-width: 60vh;
+}
+
+.visit_wrap div {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 250px;
+    text-align: center;
+    width: 380px;
+    height: 380px;
+    display: inline-block;
+    border: 2px solid orange;
+    margin: 50px 0 0 20px;
+
+}
+
+.visit_wrap div ul li {
+    padding: 20px;
+}
+
+.visit_wrap div ul li a {
+    display: block;
+    color: white;
+    font-size: 24px;
+    margin: 10px auto;
+    padding: 2px;
+}
+
+.download {
+    color: white;
+    font-weight: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    border: 1px solid orange;
+    float: right;
+    margin: -450px 110px 0 0;
+}
+
+.download h2 {
+    margin: 25px auto;
+    font-weight: 100;
+}
+
+.download a {
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid orange;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.triangle {
+    float: right;
+    /*    background-color: rgba(0, 0, 0, 0.7);*/
+    width: 0px;
+    height: 0px;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 200px solid rgba(0, 0, 0, 0.7);
+    margin: -150px 110px 0 0;
+}
+
+.triangle h3 {
+    color: white;
+    font-size: 22px;
+    margin: 0px 0 0 -30px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.triangle em {
+    text-align: center;
+    margin: 0 0 0 20px;
+    text-decoration: none;
+}
+
+.triangle i {
+    color: white;
+    font-size: 25px;
+    margin: 40px 30px 0 -12px;
+}
+
+.triangle:hover h3 {
+    color: orange;
+    cursor: pointer;
+    font-size: 26px;
+    margin-top: 0px;
+    margin-left: -35px;
+    text-transform: uppercase;
+}
+
+
+.map {
+    max-width: 640px;
+    border: 2px solid orange;
+    text-align: center;
+    margin: -350px auto 0 auto;
+}
+
+.map h4 {
+    color: white;
+    font-size: 25px;
+    background: rgba(255, 195, 0, 0.7);
+}
+
+.map p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 21px;
+}
+
+.googlemap {
+    width: 100%;
+
+}
+
+/*----------------------EXHIBITIONS & EVENTS-----------------*/
+
+body#exhibition {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4)), url(images/library-1132573_1920.jpg);
+    /*    background: url(images/andrew-ruiz-348421.jpg) no-repeat;*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.to_gallery {
+    display: flex;
+    text-align: center;
+    max-width: 100px;
+    margin: 30px auto;
+}
+
+#exhibition_content {
+    justify-content: center;
+    display: flex;
+}
+
+.exhibition_wrap {
+    display: grid;
+    color: white;
+    width: 1200px;
+    text-align: center;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    grid-gap: 15px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.exhibition_wrap p {
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+.exhibition_wrap i {
+    text-decoration: underline;
+    ;
+}
+
+
+.column_1,
+.column_2 {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 1.3em;
+}
+
+.column_1 h3 {
+    background-color: rgba(204, 48, 48, 0.6);
+    padding: 10px;
+    font-weight: 300;
+    font-family: serif;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.column_2 h3 {
+    background-color: rgba(112, 112, 112, 0.8);
+    padding: 10px;
+    font-weight: 300;
+    font-family: serif;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+
+
+/*-----------------------EXPLORE---------------------*/
+
+body#explore {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)), url(images/billetto-editorial-334686.jpg);
+    /*    background: url(images/andrew-ruiz-348421.jpg) no-repeat;*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+#explore_content {
+    width: 100%;
+    height: 140vh;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+
+}
+
+
+.explore_wrap {
+    display: block;
+    margin: 30px 0 10px 20px;
+}
+
+div.researches {
+    width: 100%;
+    margin: 20px auto;
+    height: 31%;
+    float: left;
+}
+
+div.for_kids {
+    width: 100%;
+    margin: auto;
+    height: 31%;
+    float: left;
+}
+
+
+div.for_teachers {
+    width: 100%;
+    margin: 20px auto;
+    height: 31%;
+    float: left;
+}
+
+
+.explore_wrap h1 {
+    float: left;
+    max-height: 50%;
+    width: 20vh;
+    font-size: 30px;
+    line-height: 100px;
+}
+
+
+div.vertical-line {
+    width: 1px;
+    height: 32vh;
+    float: left;
+    border: 2px ridge silver;
+    border-radius: 2px;
+    padding: 8px;
+    margin-right: 15px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.explore_wrap p {
+    max-width: 100%;
+    height: 24%;
+    margin-left: 22vh;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: none;
+    line-height: 35px;
+}
+
+.researches div.vertical-line {
+    background-color: rgba(246, 181, 69, 0.7);
+}
+
+.for_teachers div.vertical-line {
+    background-color: rgba(243, 93, 93, 0.8);
+}
+
+.for_kids div.vertical-line {
+    background-color: rgba(173, 110, 204, 0.8);
+}
+
+
+/*-------------------GET_INVOLVED------------------- */
+
+body#get_involved {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7)), url(images/celso-405219.jpg);
+    /*    background: url(images/andrew-ruiz-348421.jpg) no-repeat;*/
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 120vh;
+}
+
+#features {
+    display: flex;
+
+}
+
+#features div {
+    margin: 8px 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    min-height: 30vh;
+    color: white;
+    font-size: 25px;
+}
+
+#features h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+#features p {
+    padding: 15px;
+    word-spacing: 2px;
+    font-weight: 600;
+}
+
+h1.involved {
+    font-size: 45px;
+    word-spacing: 6px;
+    border-radius: 5px;
+    background: rgba(204, 19, 19, 0.5);
+    margin-bottom: 60px;
+}
+
+#features div:nth-child(1) {
+    background: rgba(27, 22, 36, 1);
+}
+
+#features div:nth-child(2) {
+    background: rgba(35, 60, 10, 1);
+}
+
+#features div:nth-child(3) {
+    background: rgba(0, 60, 70, 1);
+}
+
+
+/*
+
+---------------------GALLERY-----------------
+*/
+
+body#gallery_part {
+    background: #403A2F;
+    height: 110vh;
+}
+
+section.pictures {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+div.gallery {
+    display: grid;
+    grid-gap: 15px;
+}
+
+.pic {
+    width: 40%;
+    border: 3px solid black;
+    object-fit: cover;
+}
+
+
+h4.gallery_title {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+
+a img {
+    position: absolute;
+    top: 13%;
+    right: 15px;
+    color: white;
+    background: white;
+    width: 35px;
+    font-size: 5px;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+a img:hover {
+    top: 14%;
+    width: 40px;
+}
+
+#gallery_part .backButton {
+    position: absolute;
+    top: 18%;
+    right: 18px;
+    color: white;
+    width: 40px;
+    font-size: 30px;
+}
+
+#gallery_part footer {
+    position: relative;
+    bottom: -160%;
+}
+
+/*------------------contact----------------------*/
+
+body#contact {
+    background: #403A3F;
+    height: 110vh;
+}
+
+#form {
+    width: 50vh;
+    padding: 15px;
+    color: white;
+    border: 2px solid white;
+    margin: 5px auto;
+    font-size: 20px;
+
+}
+
+#form.input {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 2px 8px 10px 8px;
+}
+
+textarea {
+    width: 100%;
+}
+
+
+#error {
+    color: burlywood;
+    font-size: 30px;
+    margin: 10px;
+}
+
+#validationMsg {
+    color: bisque;
+    font-size: 30px;
+    margin: 10px;
+}
+
+button.sendMessage {
+    width: 200px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border: 3px solid grey;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+button.sendMessage:hover {
+    color: white;
+    background-color: darkgray;
+}
+
+/*´´´´´´´´´´´´´´´´Uncomming - newAPI´´´´´´´´´´´´´´´*/
+/*.fromApi {
+    position: relative;
+    top: -115vh;
+    left: 15vw;
+    font-size: 20px;
+}
+*/
+body#newAPI {
+    background-color: darkgrey;
+
+}
+
+.col {
+    border: 2px solid grey;
+    margin: 10px;
+    border-radius: 7px;
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+.col:hover {
+    cursor: pointer;
+}
+
+.product img {
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 5px;
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+}
+
+
+/*----------------------MEDIA----------------------*/
+
+@media (max-width:1480px) {
+
+    #explore_content {
+        height: 140vh;
+    }
+
+    .map {
+        max-width: 500px;
+        margin-top: -250px;
+
+    }
+
+
+    .visit_wrap div {
+        border-radius: 150px;
+        width: 250px;
+        height: 250px;
+        display: inline-block;
+        border: 2px solid orange;
+        margin: 20px 80px auto;
+        font-size: 15px;
+    }
+
+
+    .visit_wrap h1 {
+        font-size: 45px;
+        margin-top: 10px;
+        margin-bottom: 110px;
+        margin-top: 110px;
+        max-width: 70vh;
+    }
+
+    .visit_wrap div ul li a {
+        font-size: 20px;
+        line-height: 15px;
+    }
+
+}
+
+
+@media (max-width:1330px) {
+
+    p.description {
+        z-index: -1;
+    }
+
+    #visit_content {
+        height: 120%;
+    }
+
+
+
+    .download {
+        width: 250px;
+        height: 150px;
+        margin: -450px 60px 0 0;
+    }
+
+
+    .triangle {
+
+        margin: -120px 40px 0 0;
+    }
+
+}
+
+@media (max-width:1180px) {
+
+    label.logo {
+        font-size: 30px;
+    }
+
+    nav ul li a {
+        font-size: 19px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    p.description {
+        z-index: -1;
+    }
+
+    .download {
+        width: 200px;
+        height: 150px;
+        margin: -400px 40px 0 auto;
+    }
+
+    .download h2 {
+        font-size: 15px;
+    }
+
+    .triangle {
+
+        margin: -120px 30px 0 0;
+    }
+
+    .map {
+        max-width: 450px;
+        margin: -300px auto 0;
+    }
+
+    .visit_wrap div {
+        margin: 20px 30px auto;
+
+    }
+}
+
+@media (max-width:1080px) {
+
+    .visit_wrap div {
+        margin: 20px 2px auto;
+    }
+
+
+    .triangle {
+
+        margin: -80px 5px 0 0;
+    }
+
+    body#visit {
+        height: 150vh;
+    }
+
+    body#get_involved {
+        height: 150vh;
+    }
+
+    div .map {
+        height: 200px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width:1024px) {
+
+    #visit_content {
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+
+    .visit_wrap h1 {
+        position: absolute;
+        top: -60px;
+        left: 10%;
+        right: 10%;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 50px;
+        max-width: 600px;
+    }
+
+    .visit_wrap div {
+        margin: 0;
+        position: absolute;
+        top: 330px;
+        left: 55%;
+        right: 25%;
+    }
+
+    .explore_wrap h1 {
+        font-size: 25px;
+    }
+
+    .download {
+        position: absolute;
+        top: 270px;
+        left: 17%;
+        right: 25%;
+        margin: 0;
+    }
+
+    .triangle {
+        position: absolute;
+        top: 465px;
+        left: 30%;
+        right: 25%;
+        margin: 0;
+    }
+
+    .map {
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        margin-top: 700px;
+        max-width: 550px;
+    }
+
+}
+
+@media (max-width:880px) {
+
+    .site_mark {
+        display: inline-block;
+        color: lightgray;
+        text-transform: uppercase;
+        float: left;
+        font-size: 1.1em;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .to_gallery {
+        margin: 40px auto 0 auto;
+    }
+
+
+    #explore_content {
+        height: 210vh;
+    }
+
+    .burger {
+        display: block;
+        z-index: 10;
+    }
+
+    #visit_content {
+        z-index: 0;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 110vh;
+        background: #000000;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 23px 0;
+        line-height: 28px;
+    }
+
+    nav ul li a {
+        font-size: 28px;
+    }
+
+    a:hover {
+        background: none;
+        color: grey;
+        transition: .2s;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    h1 {
+        font-size: 35px;
+        /*        max-width: 250px;*/
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    h1.involved {
+        font-size: 33px;
+        margin: 50px auto 70px auto;
+    }
+
+    .buy h2 a {
+        font-size: 20px;
+    }
+
+    p.description {
+        z-index: -1;
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 5px auto;
+
+    }
+
+    .socials {
+        display: inline;
+        height: 60px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    .socials img {
+        float: right;
+        padding: 10px;
+    }
+
+    .socials img:hover {
+        height: 90px;
+        cursor: pointer;
+    }
+
+    .explore_wrap h1 {
+        border-radius: 0;
+        /*        transform: rotate(-90deg);*/
+        padding: 0px;
+        max-height: 60%;
+        height: 60vh;
+        width: 23vh;
+        margin: -5px 5px 10px -5px;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        font-size: 17px;
+        font-weight: 100;
+        font-family: serif;
+        -webkit-text-stroke: 0px white;
+    }
+
+    .researches h1 {
+        background-color: rgba(246, 181, 69, 0.8);
+    }
+
+    .for_teachers h1 {
+        background-color: rgba(243, 93, 93, 0.8);
+    }
+
+    .for_kids h1 {
+        background-color: rgba(173, 110, 204, 0.8);
+    }
+
+
+    .explore_wrap p {
+        margin-left: 10vh;
+        margin-top: -10px;
+        font-size: 18px;
+        display: flex;
+    }
+
+    div.vertical-line {
+        display: none;
+    }
+
+    /*
+    .explore_wrap p {
+        margin-left: 20px
+    } 
+*/
+    body#get_involved {
+        height: 170vh;
+    }
+
+
+    a img {
+        top: 26%;
+        right: 10px;
+        width: 20px;
+        font-size: 3px;
+        border-radius: 15px;
+    }
+
+}
+
+@media (max-width:750px) {
+
+    #explore_content {
+        height: 300vh;
+    }
+
+    .explore_wrap h1 {
+        width: 16vh;
+        font-size: 20px;
+        max-height: 60%;
+        height: 50vh;
+    }
+
+    @media (max-width:690px) {
+
+
+        #explore_content {
+            height: 270vh;
+        }
+
+        nav ul li {
+            margin: 25px 0;
+            line-height: 18px;
+        }
+
+        nav ul li a {
+            font-size: 18px;
+        }
+
+
+        .visit_wrap h1 {
+            top: -70px;
+            font-size: 40px;
+            padding: 15px;
+            max-width: 400px;
+        }
+
+
+        .visit_wrap div {
+            border-radius: 100px;
+            width: 200px;
+            height: 200px;
+            left: 52%;
+        }
+
+        .visit_wrap div ul li {
+            padding: 7px;
+        }
+
+        .visit_wrap div ul li a {
+            font-size: 17px;
+        }
+
+
+        .download {
+            top: 330px;
+            left: 2%;
+            width: 160px;
+            height: 120px;
+        }
+
+        .triangle {
+            top: 480px;
+            left: 22%;
+            right: 25%;
+            border-left: 90px solid transparent;
+            border-right: 90px solid transparent;
+            border-bottom: 150px solid rgba(0, 0, 0, 0.7);
+        }
+
+        .triangle h3 {
+            font-size: 18px;
+            margin: 0px -27px -30px;
+        }
+
+        .triangle i {
+            font-size: 20px;
+            margin-top: 24px;
+            margin-bottom: 10px;
+        }
+
+        .triangle em {
+            text-align: center;
+            margin: 0 20px 0 20px;
+        }
+
+        .triangle:hover h3 {
+            font-size: 20px;
+            margin-top: -5px;
+            margin-left: -30px;
+        }
+
+        #features {
+            flex-direction: column;
+        }
+
+        .explore_wrap h1 {
+            max-height: 60%;
+            height: 60vh;
+            border-radius: 0;
+            /*        transform: rotate(-90deg);*/
+            width: 16vh;
+            margin: -3px 5px 10px -10px;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            font-size: 18px;
+            font-weight: 100;
+            font-family: serif;
+            line-height: 71px;
+
+        }
+
+        body#get_involved {
+            height: 190vh;
+        }
+
+    }
+
+    @media (max-width:540px) {
+
+        #explore_content {
+            height: 300vh;
+        }
+
+        .explore_wrap h1 {
+            width: 15vh;
+            font-size: 19px;
+        }
+
+        body#get_involved {
+            height: 230vh;
+        }
+
+    }
+
+    @media (max-width:375px) {
+
+        #explore_content {
+            height: 300vh;
+        }
+
+        .explore_wrap h1 {
+            width: 12vh;
+            font-size: 19px;
+        }
+
+
+    }

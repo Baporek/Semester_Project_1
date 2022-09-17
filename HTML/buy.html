@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:400,700|Saira:300,400&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<div id="cart-container"></div>
+
+<body class="buy-form">
+    <div class="form-container">
+        <form class="order-form" action="" method="get">
+            <fieldset id="Tickets_option">
+                <legend>
+                    <h1>Buy your tickets here</h1>
+                </legend>
+                <select class="order-form_dropdown" name="select-ticket">
+                    <option value="blank">Select the type of ticket</option>
+                    <option value="margherita">Adult</option>
+                    <option value="quattro-formaggi">Student/Senior</option>
+                    <option value="capricciosa">Family</option>
+                </select>
+                <p>What's type of performacne:</p>
+                <input type="radio" id="Event" name="show" value="event">
+                <label for="event">Event</label>
+                <input type="radio" id="Exhibition" name="show" value="exhibition">
+                <label for="Exhibition">Exhibition</label>
+                <input type="radio" id="Explore" name="show" value="Explore">
+                <label for="Explore">Explore</label>
+                <input type="radio" id="Space" name="show" value="Space">
+                <label for="Space">Space</label>
+                <p>How many people?</p>
+                <ul>
+                    <li><input type="checkbox" name="single" value="single">
+                        <label for="crunchie">single</label></li>
+                    <li><input type="checkbox" name="couple" value="couple">
+                        <label for="couple">couple</label></li>
+                    <li><input type="checkbox" name="family 3-4" value="family">
+                        <label for="family">family 3-4</label></li>
+                    <li><input type="checkbox" name="class" value="class">
+                        <label for="class">class</label></li>
+                </ul>
+            </fieldset>
+            <fieldset id="contact-info">
+                <legend>Your contant info</legend>
+                <label for="name">Full name*</label>
+                <input type="text" name="name" required="">
+                <label for="phone">Telephone number*</label>
+                <input type="tel" name="phone" required="">
+                <label for="address">Address*</label>
+                <input type="text" name="address" required="">
+            </fieldset>
+
+            <input id="order-button" type="submit" name="order" value="Order">
+        </form>
+    </div>
+
+    <button>
+        <a href="index.html">Back to home</a>
+    </button>
+    <script src="cart.js"></script>
+    <script src="index.js"></script>
+</body></html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Info</title>
+</head>
+<body>
+    <div class="container">
+        <div id="data"></div>
+    </div>
+    <script>
+        let id = window.location.href.split('id=').pop();
+        const wpUrl = "https://baporek.com/api_web_test_page/wp-json/wc/store/products";
+
+        async function getProducts(url) {
+            const response = await fetch(url);
+            const products = await response.json();
+            let product = await products.find(elem => elem.id === parseInt(id));
+            document.getElementById('data').innerHTML += `<div class="product">
+                <img src="${product.images[0].src}" class="img" />
+                <h2>${product.name}</h2>
+                <p><b>Description</b>${product.description.split('<img')[0]}</p>
+            </div>`
+        }
+
+        getProducts(wpUrl);
+    </script>
+</body>
+</html>

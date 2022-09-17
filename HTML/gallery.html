@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:400,700|Saira:300,400&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="gallery_part">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="burger">
+            <i class="fas fa-bars"></i></label>
+        <label class="logo" onclick="BackToHome()"> <img src="images/logoo.jpg" alt="Science Museum" width="130" height="100"></label>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="exhibitions.html">Exhibitions & Events</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="get_involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="fas fa-search" onclick="SearchGoogle()"></div>
+    </nav>
+    <h4 class="gallery_title">Gallery</h4>
+
+    <section class="pictures">
+        <div class=”gallery”>
+            <img src="images/ball-1010907_1920.jpg" alt="ball" class="pic item1">
+            <img src="images/binoculars-2028304.jpg" alt="binoculars" class="pic item2">
+            <img src="images/heart-2607178_1920.jpg" alt="heart" class="pic item3">
+            <img src="images/mammoth-1257288_1920.jpg" alt="mammoth" class="pic item4">
+            <img src="images/jesse-orrico-60373.jpg" alt="jesse-orrico" class="pic item5">
+            <img src="images/skeleton-414543_1920.jpg" alt="skeleton" class="pic item6">
+            <img src="images/samuel-zeller-113381.jpg" alt="inside_body" class="pic item7">
+            <img src="images/samuel-zeller-158996.jpg" alt="5D" class="pic item8">
+        </div>
+    </section>
+    <a href="exhibitions.html"><img src="images/back-arrow.png"></a>
+    <p class="backButton">Back</p>
+    <footer>
+        <p>Copyrights &copy;Science Museum 2021</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

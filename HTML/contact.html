@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:400,700|Saira:300,400&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="contact">
+    <div class="ContactForm">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="burger">
+                <i class="fas fa-bars"></i></label>
+            <label class="logo" onclick="BackToHome()"> <img src="images/logoo.jpg" alt="Science Museum" width="130" height="100"></label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="exhibitions.html">Exhibitions & Events</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="get_involved.html">Get Involved</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="fas fa-search" onclick="SearchGoogle()"></div>
+        </nav>
+        <h1>Contact Page</h1>
+        <h2 id="validationMsg"></h2>
+        <form id="form">
+            <label for="name">Name:</label>
+            <input type="text" id='name' placeholder="Enter your name" name="name" />
+            <label for="subject">Subject:</label>
+            <input type="text" id='subject' placeholder="Enter subject" name="subject" />
+            <label for="email">Email:
+                <br></label> <input type="email" id='email' placeholder="Enter email" name="email" /><br />
+            <label for="message">Your message:</label>
+            <textarea name="message" id='message' rows="10"> </textarea>
+        </form>
+        <p id="error" </p> <button class="sendMessage" onclick="submit()">Send message</button>
+
+            <footer>
+                <p>Copyrights &copy;Science Museum 2021</p>
+            </footer>
+
+            <script src="contact.js"></script>
+            <script src="index.js"></script>
+    </div>
+</body></html>

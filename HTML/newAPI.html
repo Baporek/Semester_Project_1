@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>newAPI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:400,700|Saira:300,400&amp;subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="container">
+    <div id="data"></div>
+</div>
+<body id="newAPI">
+    <script>
+        const wpUrl = "https://baporek.com/api_web_test_page/wp-json/wc/store/products";
+
+        async function getProducts(url) {
+            const response = await fetch(url);
+            const products = await response.json();
+            console.log(products);
+
+            products.forEach(function(product){
+                document.getElementById('data').innerHTML += `<div class="product col" onclick="getInfo(${product.id})">
+                    <img src="${product.images[0].src}" class="img" />
+                    <h2>${product.name}</h2>
+                    <p>${product.description.split('<img')[0]}</p>
+                </div>`
+            })
+        }
+
+        getProducts(wpUrl);
+
+        function getInfo(id) {
+            console.log(id);
+            window.location.href = `productInfo.html?id=${id}`;
+        }
+    </script>
+</body>
+
+</html>
