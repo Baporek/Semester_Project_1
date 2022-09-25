@@ -19,7 +19,7 @@ Stacks I used to build the project:
 - HTML
 - CSS
 - JavaScript
-- 
+ 
 ## Getting Started
 
 ### Installing
