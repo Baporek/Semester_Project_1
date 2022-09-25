@@ -1,15 +1,16 @@
-# Cross-Course
+# Semester Project 1
 
-![Ice_Nice_Cream](https://user-images.githubusercontent.com/74684378/192156150-d3d6fb33-61e2-43fe-b727-5bedf8bec179.jpg)
+![science_museum](https://user-images.githubusercontent.com/74684378/192156375-797099ae-f046-443d-8adc-c220ad20eeaf.jpg)
 
 ## Description
-I set out to make a website for an Ice cream shop. First I researched similar Ice cream pages before I created a my own. 
+I set out to make a website for an Science Museum. First I researched similar Museum pages before I created a my own. 
 It has several subpages:
 
     - Home
-    - About
-    - Services
-    - Feedback
+    - Visit
+    - Exhibitions & Events
+    - Explore
+    - Get Involved
     - Contact
 
 ## Built With
@@ -17,7 +18,8 @@ Stacks I used to build the project:
 
 - HTML
 - CSS
-
+- JavaScript
+- 
 ## Getting Started
 
 ### Installing
@@ -27,7 +29,7 @@ Here is the repo can be used and clone to fallow the current changes
 1. Clone the repo:
 
 ```bash
-https://github.com/Baporek/Cross-course_project.git
+https://github.com/Baporek/Semester_Project_1.git
 ```
 
 ## Contributing
